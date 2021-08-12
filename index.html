@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Poppins:300,400,500,600,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" media="screen">
   <link href="css/custom.css" rel="stylesheet" media="screen">
+
 </head>
 
 <body>
@@ -439,21 +440,24 @@
                 </div>
               </div>
               <div class="col-md-9">
-                <form id="contact_form">
+                <!-- <form class="" action="https://script.google.com/macros/s/AKfycbyTot7erA95oAWu7CCB2nuDxLpo8LQdzmLLJ8GSLeL1J-kFI-FqVXEb9Iz2AIPQwAxmCQ/exec" method="post"> -->
+                <form id="submit-form">
                   <div class="row">
                     <div class="form-group col-sm-6 col-lg-4">
-                      <input class="input-gray" type="text" name="name" required placeholder="Name*">
+                      <input class="input-gray" type="text" name="name" placeholder="Name*">
                     </div>
                     <div class="form-group col-sm-6 col-lg-4">
-                      <input class="input-gray" type="text" name="message" placeholder="Mobile Number">
+                      <input class="input-gray" type="text" name="mobile" placeholder="Mobile Number*">
                     </div>
                     <div class="form-group col-sm-12 col-lg-4">
-                      <input class="input-gray" type="text" name="subject" placeholder="Subject (Optinal)">
+                      <input class="input-gray" type="text" name="subject" placeholder="Subject">
                     </div>
-                    <div class="col-sm-12"><button type="submit" value="submit" class="btn-upper btn-yellow btn">Send Message</button></div>
+                    <div class="col-sm-12">
+                      <button type="submit" value="submit" class="btn-upper btn-yellow btn">Submit</button>
+                    </div>
                   </div>
-                  <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
-                  <div class="error-message">We're sorry, but something went wrong</div>
+                  <!-- <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
+                  <div class="error-message">We're sorry, but something went wrong</div> -->
                 </form>
               </div>
             </div>
@@ -461,6 +465,7 @@
         </section>
       </div>
 
+      <!-- footer -->
       <footer id="footer" class="footer section custom-footer">
         <div class="footer-flex">
           <div class="flex-item">
@@ -524,7 +529,7 @@
           </button> -->
         </div>
         <div class="modal-body">
-          <form class="" action="https://script.google.com/macros/s/AKfycbzNkR3rdchwpVo4CzL4D4py-ew41hAS41EYYj8W25Bjfa_fsw3jb2t2HUomKQJ2xon9/exec" method="post">
+          <form class="submit---form">
             <div class="form-group col-4">
               <input class="input-gray" type="text" name="name" required placeholder="Name*">
             </div>
@@ -544,8 +549,10 @@
     </div>
   </div>
 
-
-  <script src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/animsition.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/smoothscroll.js"></script>
