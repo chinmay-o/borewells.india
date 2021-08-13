@@ -1,18 +1,15 @@
 
 
-
 $("#contact_form").submit((e) => {
   e.preventDefault()
   $.ajax({
-
-    url: "https://script.google.com/macros/s/AKfycby2QsXGw-N_oXFgZ7_ARvhsaDpbu6S4YMaUrQ-ckfXj797pxBssm8k3M21U4ru6w3ZpZg/exec",
+    url: "https://script.google.com/macros/s/AKfycbwU2dHQ-b0LFjy2VZYwTxiMjID_X990Ma3_OYGMCv2N_bBWVLYRHNDNumuH3j85Lv1g/exec",
     data: $("#contact_form").serialize(),
-    method: "post",
-    headers: {'Access-Control-Allow-Origin': 'https://chinmay-o.github.io/borewells.india/'},
-    
+    method: "POST",
+
     success: function(response) {
       alert("Form submitted successfully")
-      window.location.reload()
+      // window.location.reload()
       //window.location.href="https://google.com"
     },
     error: function(err) {
