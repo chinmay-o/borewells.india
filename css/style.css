@@ -1894,7 +1894,8 @@ a.brand:hover, a.brand:focus {
   border: 1px solid #fbe000;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  height: 300px;
 }
 
 .project-box-inner {

@@ -35,7 +35,12 @@
   color: white !important;
 }
 
+.about-us-margin {
+
+  margin-right: 0;
+}
+
 .custom-footer {
 
-  padding: 4.28rem 0 10.28rem 0 !important;
+  padding: 4.28rem 2rem 10.28rem 2rem !important;
 }
