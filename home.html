@@ -14,52 +14,36 @@
 
 <body>
 
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-      <p>Swing by for a cup of coffee, or leave us a message:</p>
-    </div>
-    <div class="row">
+  <div id="submit-form" class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
 
-      <div class="column">
-        <!-- <form id="submit-form"> -->
-        <!-- <form method="POST" action="https://sheetdb.io/api/v1/jknfqant6zhnv">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="name" placeholder="Your name..">
-              <label for="lname">Email</label>
-              <input type="text" id="lname" name="mobile" placeholder="mobile.">
+    <div class="column">
+      <form>
+        <!-- <form method="POST" action="https://sheetdb.io/api/v1/jknfqant6zhnv"> -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="mobile" placeholder="mobile.">
 
-              <input type="submit" value="Submit">
-            </form> -->
+        <input type="submit" value="Submit">
+      </form>
 
-        <div class="container">
-          <!-- <h1>FormSubmit Demo</h1> -->
-          <form target="_blank" action="https://formsubmit.co/borewellsind@gmail.com" method="POST">
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                </div>
-                <div class="col">
-                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-          </form>
-        </div>
-
-      </div>
     </div>
   </div>
+</div>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
   <script>
+
     $("#submit-form").submit((e) => {
       e.preventDefault()
       $.ajax({
-        url: "https://script.google.com/macros/s/AKfycby3oFIs0CzOhH8DJAx69V5IBY8Kea5dvG6HjWxaSNZTf_Ngrwj5mHhYhYs8Ij3-QA5b/exec",
+        url: "https://script.google.com/macros/s/AKfycbwo524_eP6VGPWuNhK_WRrIrsS9rDXmHGnF5DItZU2d0VAVMnIJpqed1NLRNUdBj2OX/exec",
         data: $("#submit-form").serialize(),
-        type: "PUT",
+        type: "POST",
         success: function(response) {
           alert("Form submitted successfully")
           window.location.reload()

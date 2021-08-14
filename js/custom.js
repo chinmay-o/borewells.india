@@ -1,18 +1,19 @@
 
 
-$("#contact_form").submit((e) => {
+$("#submit-form").submit((e) => {
   e.preventDefault()
   $.ajax({
-    url: "https://formsubmit.co/borewellsind@gmail.com",
-    method: "POST",
-
+    url: "https://script.google.com/macros/s/AKfycbx80Pv_KT6vwzsQB2klyDHSRZQaEupOkBRfB3XTBGzkBt6TBffh2guDVjh-YvGuPIwp/exec",
+    data: $("#submit-form").serialize(),
+    type: "POST",
     success: function(response) {
       alert("Form submitted successfully")
-      // window.location.reload()
+      window.location.reload()
       //window.location.href="https://google.com"
     },
     error: function(err) {
       alert("Something Error")
-    },
+
+    }
   })
-});
+})
