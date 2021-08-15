@@ -44,3 +44,34 @@
 
   padding: 4.28rem 2rem 10.28rem 2rem !important;
 }
+
+.success-message-modal {
+
+  display: none;
+}
+
+.error-message-modal {
+
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .row-services .col-service {
+
+    float: right!important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .custom-footer {
+
+    padding: 0 2rem 4.28rem 2rem !important;
+  }
+
+  .project-box {
+
+    height: 260px;
+  }
+}
