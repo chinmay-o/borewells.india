@@ -2,8 +2,8 @@
 
 .label-container{
 	position:fixed;
-	bottom:48px;
-	right:105px;
+	bottom:28px;
+	right:86px;
 	display:table;
 	visibility: hidden;
   z-index: 10000;
